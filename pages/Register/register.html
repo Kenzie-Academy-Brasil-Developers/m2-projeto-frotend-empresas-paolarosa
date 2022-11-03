@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./mediaRegister.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <title>Kenzie Company Register</title>
+</head>
+
+<body>
+    <div class="div-header">
+        <header>
+            <img class="logo" src="../../assets/Group 42.png">
+            <img class="button-nav-open" src="../../assets/Vector.png">
+            <nav class="nav hidden">
+                <a class="button-nav-home" href="../../pages/Home/home.html">Home</a>
+                <a class="button-nav-login" href="../Login/login.html">Login</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+
+        <form>
+            <h3>Cadastre-se</h3>
+            <input id="username" type="text" placeholder="Seu nome">
+            <input id="email" type="text" placeholder="Seu e-mail">
+            <input type="password" id="password" type="text" placeholder="Sua senha">
+            <select class="select" placeholder="Nível profissional">
+                <option value="">Nível profissional</option>
+                <option value="estágio">Estágio</option>
+                <option value="júnior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="sênior">Sênior</option>
+            </select>
+            <button class="button-submit" type="submit">Cadastre-se</button>
+            <a href="../Home/home.html">Retornar</a>
+
+        </form>
+
+    </main>
+    <div class="div-return hidden">
+
+    </div>
+    <script type="module" src="./register.js"></script>
+</body>
+
+</html>

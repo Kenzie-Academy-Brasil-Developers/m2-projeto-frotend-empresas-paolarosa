@@ -1,0 +1,168 @@
+
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px var(--box-shadow);
+    position: relative;
+
+}
+
+.button-nav-open {
+    padding: 0 20px;
+}
+
+.logo {
+    height: 15px;
+    padding: 0 20px;
+}
+
+.nav {
+    position: fixed;
+    background-color: var(--white);
+    top: 60px;
+    z-index: 1;
+    width: 100vw;
+    height: 70px;
+    -webkit-box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border: 1px solid var(--blue);
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.button-nav-home {
+    background-color: var(--white);
+    color: var(--blue);
+    font-weight: 700;
+    font-size: var(--font-size-2);
+}
+
+.button-nav-register {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--font-size-2);
+}
+
+main {
+    width: 100vw;
+    height: 600px;
+    background-image: url(../../assets/Rectangle.png);
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    margin-top: 30px;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+form h3 {
+    font-size: var(--font-size-1);
+    font-weight: 700;
+    margin: 30px 20px 0 15px;
+}
+
+form p {
+    font-weight: 400;
+    font-size: var(--font-size-3);
+    margin-left: 15px;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    color: var(--box-shadow);
+    font-size: 0.75rem;
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+form button {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: var(--font-size-2);
+}
+
+.ou{
+    text-align: center;
+}
+
+form a{
+    width: 90%;
+    height: 48px;
+    margin-left: 15px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+
+.div-return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    border-radius: 10px;
+    height: 68px;
+    width: 207px;
+    font-size: var(--font-size-3);
+    color: var(--white);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: toast 10s ease-in forwards;
+}
+
+@keyframes toast {
+    0% {
+        right: 20px;
+        bottom: -100px
+    }
+    10% {
+        right: 20px;
+        bottom: 10px
+    }
+    90% {
+        right: 20px;
+        bottom: 10px
+    }
+    100% {
+        right: 20px;
+        bottom: -100px
+    }
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,136 @@
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.button-nav-open {
+    padding: 0 20px;
+}
+
+.logo {
+    height: 15px;
+    padding: 0 20px;
+}
+
+nav {
+    position: fixed;
+    background-color: var(--white);
+    top: 60px;
+    z-index: 1;
+    width: 100vw;
+    height: 70px;
+    -webkit-box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 29px 17px -28px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #4200FF;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.button-nav-login {
+    background-color: var(--white);
+    color: var(--blue);
+    font-weight: 700;
+    font-size: var(--font-size-2)
+}
+
+.button-nav-register {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--font-size-2)
+}
+
+main {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--white);
+    box-shadow: 0px 5px 5px var(--box-shadow);
+}
+
+.div-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select {
+    background: var(--blue);
+    text-align: center;
+    border: none;
+    width: 90%;
+    height: 48px;
+    margin-top: 15px;
+    color: var(--white);
+    font-size: var(--font-size-2);
+    line-height: 27px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+}
+
+ul {
+    width: 370px;
+    height: 250px;
+    display: flex;
+    list-style: none;
+    margin: 20px 15px;
+    overflow-x: scroll;
+}
+
+li {
+    min-width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 15px 0 30px;
+    background-color: var(--white);
+    padding-left: 15px;
+    border-bottom: 2px solid var(--blue);
+}
+
+.company-name {
+    font-size: var(--font-size-1);
+}
+
+.company-time {
+    font-size: var(--font-size-3)
+}
+
+.company-setor {
+    font-size: var(--font-size-4);
+    border: 1px solid var(--blue);
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border-radius: 255px;
+    color: var(--blue);
+}
+
+.hidden {
+    display: none;
+}
+

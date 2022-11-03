@@ -1,0 +1,180 @@
+header {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px var(--box-shadow);
+    position: relative;
+}
+
+.button-nav-open {
+    padding: 0 20px;
+}
+
+.logo {
+    height: 15px;
+    padding: 0 20px;
+}
+
+.nav {
+    position: fixed;
+    background-color: var(--var(--white));
+    top: 60px;
+    z-index: 1;
+    width: 100vw;
+    height: 70px;
+    -webkit-box-shadow: 3px 29px 17px -28px var(--box-shadow);
+    -moz-box-shadow: 3px 29px 17px -28px var(--box-shadow);
+    box-shadow: 3px 29px 17px -28px var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border: 1px solid var(--blue);
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.button-nav-home {
+    background-color: var(--white);
+    color: var(--blue);
+    font-weight: 700;
+    font-size: var(--font-size-2);
+}
+
+.button-nav-login {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--font-size-2);
+}
+
+main {
+    width: 100vw;
+    height: 600px;
+    background-image: url(../../assets/Rectangle.png);
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 25px;
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+form h3 {
+    font-size: var(--font-size-1);
+    font-weight: 700;
+    margin: 30px 20px 0 20px;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-size-3);
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+form select {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-size-3);
+    padding-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+form select option {
+    color: var(--black);
+}
+
+form button {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: var(--font-size-2);
+}
+
+form a {
+    width: 90%;
+    height: 48px;
+    margin-left: 15px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+
+.div-return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    min-height: 70px;
+    min-width: 230px;
+    font-size: var(--font-size-3);
+    color: var(--white);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 10px;
+    animation: toast 10s ease-in forwards;
+}
+
+.div-erro{
+    background: #CE4646;
+}
+.div-sucess{
+    background: #4BA036;
+}
+
+@keyframes toast {
+    0% {
+        right: 20px;
+        bottom: -100px
+    }
+    10% {
+        right: 20px;
+        bottom: 10px
+    }
+    90% {
+        right: 20px;
+        bottom: 10px
+    }
+    100% {
+        right: 20px;
+        bottom: -100px
+    }
+}
+
+
+.hidden {
+    display: none;
+}
