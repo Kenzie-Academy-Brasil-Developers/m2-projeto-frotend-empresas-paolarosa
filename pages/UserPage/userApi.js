@@ -1,9 +1,29 @@
 import { renderCompanyEmployees, renderInfosPerfil } from "./user.js"
 let token = JSON.parse(localStorage.getItem("@KenzieCompany"))
 
-if(!token){
+let isAdmin = await selectUserType(token)
+if(!token || isAdmin === true ){
     window.location.replace("../Login/login.html")
 }
+
+async function selectUserType(token) {
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+    }
+    const responseJSON = await fetch('http://localhost:6278/auth/validate_user', options)
+    .then((response)=> response.json())
+    .then((response)=>{
+
+        console.log(response)
+        return response.is_admin
+    })
+    return responseJSON
+}
+
 
 export async function catchUser(token) {
     const divWithoutJob = document.querySelector(".div-without-job")

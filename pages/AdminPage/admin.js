@@ -211,7 +211,7 @@ export async function modalEditDepartment(departments) {
     buttonClose.classList.add("button-close-modal")
     buttonClose.innerText = "X"
     description.classList.add("description-department-edit")
-    description.placeholder = departments.description
+    description.value = departments.description
     buttonSave.classList.add("button-modal-save-department")
     buttonSave.innerText = "Salvar alterações"
 

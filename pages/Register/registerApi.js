@@ -33,7 +33,7 @@ export function registerUser() {
                    if (!response.error) {
                         toast(response)
                         setTimeout(() => {
-                            window.location.replace("../login/login.html")
+                            window.location.replace("../Login/login.html")
                         }, 3000)
                     } else {
                         toast(response)
